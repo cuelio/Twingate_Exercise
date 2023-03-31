@@ -43,5 +43,8 @@ block we need to reset the read/write position in the buffer to the new block's 
    table of sorts that translates a logical memory block index to an actually buffer index quickly. 
 
 #### Minor things I would improve with more time
-1. Complete Javadoc comments for public methods
-2. Increase test coverage
+1. Would consider adding a FragmentedMemoryBlock class that extends MemoryBlock. Would make it easier to identify if we
+   need to perform the operations in a fragmented way, and could add some methods/member variables to FragmentedMemoryBlock
+   to make the fragmented operations easier to read and implement
+2. Complete Javadoc comments for public methods
+3. Increase test coverage
