@@ -58,7 +58,3 @@ public class MemoryBlock {
         }
     }
 }
-
-// documentation
-// 1. description of algorithm / implemetnation (tech spec)
-// 2. What would I do if I had more time

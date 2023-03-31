@@ -36,7 +36,6 @@ public class MemoryManager {
      * @param memToFree
      */
     public void free(MemoryBlock memToFree) {
-        // TODO: Do we need to clear the memory? Probably
         while (memToFree != null) {
             MemoryBlock nextBlock = memToFree.getNextBlock();
             memToFree.setNextBlock(null);
@@ -71,7 +70,7 @@ public class MemoryManager {
     }
 
     /**
-     * If I had more time with this method, I would implement a solution for when the input data is not
+     * If I had more time with this method, I would also implement a solution for when the input data is not
      * as long as the entire block. Could either add an ending character to indicate the end of the string,
      * or we could give the memory back to free memory
      *
